@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+/* ============================== Box Setting ============================== */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background : rgb(180, 142, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(180, 136, 86);
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.411);
+}
+/* ============================== Bagian Kiri Box ============================== */
+.container .left_Side
+{
+    position: relative;
+    background: #6b360a;
+    padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(180, 136, 86);
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: unset;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 250;
+}
+.contactInfo
+{
+    margin-top: 40px;
+}
+.title 
+{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #fdfdfd;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.biography p
+{
+    color: #fff;
+    text-align: justify;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+.biography .title
+{
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+.contactInfo.education h4
+{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.contactInfo.education h6
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.language .title
+{
+    margin-top: 40px;
+}
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #000000;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(180, 136, 86);
+}
+.contactInfo.language .text
+{
+    font-size: 0.9em;
+}
+.contactInfo.skills .title
+{
+    margin-top: 40px;
+}
+.contactInfo.skills .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #000000;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.skills .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(180, 136, 86);
+}
+.contactInfo.skills .text
+{
+    color: white;
+    font-size: 0.9em;
+}
+/* ============================== Bagian Kanan Box ============================== */
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 15px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    border-top: 1px solid #6b360a;
+    border-bottom: 1px solid #6b360a;
+    color: #6b360a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin: 15px 0;
+}
+p
+{
+    color: #6b360a;
+    font-size: 1em;
+    text-align: justify;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #6b360a;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #6b360a;
+    font-size: 16px;
+}
+.aboutImages .card
+{
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+    letter-spacing: 15px;
+}
+.aboutImages .card2
+{
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+    letter-spacing: 15px;
+    left: 131.1px;
+    position: relative;
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    color: #6b360a;
+    font-weight: 300;
+    margin: 5px 0;
+}
+.interest ul li .contactInfo
+{
+    color: #6b360a;
+    font-size: 0.8em;
+    width: 50px;
+    letter-spacing: 1px;
+}
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        margin-bottom: 5px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
